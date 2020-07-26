@@ -13,7 +13,24 @@ from parser_utils import arrayconv, getheadername, indent_code
 
 CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
 
-BLACK_LIST = ["awkward_ListArray_combinations_step"]
+BLACK_LIST = [
+    "awkward_ListArray_combinations_step",
+    "awkward_Index8_getitem_at_nowrap",
+    "awkward_IndexU8_getitem_at_nowrap",
+    "awkward_Index32_getitem_at_nowrap",
+    "awkward_IndexU32_getitem_at_nowrap",
+    "awkward_Index64_getitem_at_nowrap",
+    "awkward_NumpyArraybool_getitem_at",
+    "awkward_NumpyArray8_getitem_at",
+    "awkward_NumpyArrayU8_getitem_at",
+    "awkward_NumpyArray16_getitem_at",
+    "awkward_NumpyArray32_getitem_at",
+    "awkward_NumpyArrayU32_getitem_at",
+    "awkward_NumpyArray64_getitem_at",
+    "awkward_NumpyArrayU64_getitem_at",
+    "awkward_NumpyArrayfloat32_getitem_at",
+    "awkward_NumpyArrayfloat64_getitem_at",
+]
 
 
 def preprocess(filename, skip_implementation=False):
